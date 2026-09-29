@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "collected": [
+    "test_shipping.py::test_weak"
+  ],
+  "collection_errors": [],
+  "events": [
+    {
+      "nodeid": "test_shipping.py::test_weak",
+      "phase": "setup",
+      "outcome": "passed",
+      "exception": null,
+      "assertions": [],
+      "assertion_origin": null,
+      "failure": null,
+      "xfail": false
+    },
+    {
+      "nodeid": "test_shipping.py::test_weak",
+      "phase": "call",
+      "outcome": "passed",
+      "exception": null,
+      "assertions": [],
+      "assertion_origin": null,
+      "failure": null,
+      "xfail": false
+    },
+    {
+      "nodeid": "test_shipping.py::test_weak",
+      "phase": "teardown",
+      "outcome": "passed",
+      "exception": null,
+      "assertions": [],
+      "assertion_origin": null,
+      "failure": null,
+      "xfail": false
+    }
+  ],
+  "internal_errors": [],
+  "import_violations": [],
+  "loaded_implementation": [
+    "shipping.py"
+  ],
+  "pytest_version": "9.1.1",
+  "exit_code": 0
+}

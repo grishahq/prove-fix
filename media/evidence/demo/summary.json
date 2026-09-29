@@ -1,0 +1,21 @@
+{
+  "label": "Deterministic educational example; edited CLI replay source",
+  "comparisons": [
+    {
+      "name": "weak",
+      "amount": 150,
+      "classification": "NOT_CAUGHT",
+      "helper_exit_code": 1,
+      "report": "weak/report.json",
+      "report_sha256": "7001535295b28b25684e1e4c82365766b75506f0e492c57a1fea1f11232aff23"
+    },
+    {
+      "name": "boundary",
+      "amount": 100,
+      "classification": "CAUGHT",
+      "helper_exit_code": 0,
+      "report": "boundary/report.json",
+      "report_sha256": "ce04a4f96590bdde6ff3b8a33f7be563df530677682070bf2ad1ba456f59c088"
+    }
+  ]
+}

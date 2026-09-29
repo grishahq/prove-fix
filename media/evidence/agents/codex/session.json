@@ -1,0 +1,31 @@
+{
+  "agent": "codex",
+  "version": "codex-cli 0.154.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ephemeral",
+    "--sandbox",
+    "workspace-write",
+    "--json",
+    "--color",
+    "never",
+    "--cd",
+    "<fixture>",
+    "--add-dir",
+    "<agent-work>",
+    "$prove-fix Check the boundary regression test in this explicitly educational shipping fixture. Free shipping starts at 100. Inspect the current diff and the tests. Use the existing implementation-only forward fix.patch without editing any fixture or test. The new test_shipping.py is untracked, so include it explicitly. Use the already prepared interpreter <python>. Write helper evidence to <agent-work>/result. Executing this trusted disposable fixture is authorized. Invoke the bundled helper, inspect its structured failure and logs, and report observed outcomes and separate bug attribution with limitations. Do not install dependencies, change settings, create commits, or access files outside this fixture and its bundled skill/interpreter. Answer in English."
+  ],
+  "duration_seconds": 7.962,
+  "cli_exit_code": 1,
+  "timed_out": false,
+  "helper_report": null,
+  "final_response": null,
+  "verification": "Attempted real explicit CLI invocation; inspect outcome below.",
+  "error": {
+    "type": "error",
+    "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-6-sol' model is not supported when using Codex with a ChatGPT account.\"}}"
+  },
+  "helper_tool_events": [],
+  "classification": "NO_HELPER_EVIDENCE"
+}

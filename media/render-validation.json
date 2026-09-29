@@ -1,0 +1,723 @@
+{
+  "duration_seconds": 20.0,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "fast_start_atoms": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ],
+  "video_bytes": 402196,
+  "video_sha256": "58e84e8343fd5425bd8934e152e1f60fe89b02082d8e751c66d7616a70ecd186",
+  "source": "Explicitly labeled edited replay of real saved helper/pytest output; no fabricated agent session.",
+  "source_reports": [
+    {
+      "name": "weak",
+      "amount": 150,
+      "classification": "NOT_CAUGHT",
+      "helper_exit_code": 1,
+      "report": "weak/report.json",
+      "report_sha256": "7001535295b28b25684e1e4c82365766b75506f0e492c57a1fea1f11232aff23"
+    },
+    {
+      "name": "boundary",
+      "amount": 100,
+      "classification": "CAUGHT",
+      "helper_exit_code": 0,
+      "report": "boundary/report.json",
+      "report_sha256": "ce04a4f96590bdde6ff3b8a33f7be563df530677682070bf2ad1ba456f59c088"
+    }
+  ],
+  "font": "Menlo.ttc",
+  "text_layout": [
+    [
+      {
+        "text": "prove-fix",
+        "size": 35,
+        "bounds": [
+          110,
+          74,
+          299,
+          108
+        ]
+      },
+      {
+        "text": "EDUCATIONAL DEMO / EDITED CLI REPLAY",
+        "size": 26,
+        "bounds": [
+          570,
+          82,
+          1146,
+          103
+        ]
+      },
+      {
+        "text": "1/5",
+        "size": 30,
+        "bounds": [
+          1750,
+          74,
+          1804,
+          99
+        ]
+      },
+      {
+        "text": "Real captured results. Tests unchanged within each comparison.",
+        "size": 26,
+        "bounds": [
+          110,
+          1005,
+          1102,
+          1030
+        ]
+      },
+      {
+        "text": "A green test is a starting point.",
+        "size": 40,
+        "bounds": [
+          110,
+          247,
+          902,
+          286
+        ]
+      },
+      {
+        "text": "Your test is green.",
+        "size": 91,
+        "bounds": [
+          110,
+          381,
+          1155,
+          469
+        ]
+      },
+      {
+        "text": "Put the bug back.",
+        "size": 100,
+        "bounds": [
+          110,
+          517,
+          1130,
+          614
+        ]
+      },
+      {
+        "text": "Reverse only the fix. Run the same test.",
+        "size": 43,
+        "bounds": [
+          110,
+          732,
+          1150,
+          774
+        ]
+      }
+    ],
+    [
+      {
+        "text": "prove-fix",
+        "size": 35,
+        "bounds": [
+          110,
+          74,
+          299,
+          108
+        ]
+      },
+      {
+        "text": "EDUCATIONAL DEMO / EDITED CLI REPLAY",
+        "size": 26,
+        "bounds": [
+          570,
+          82,
+          1146,
+          103
+        ]
+      },
+      {
+        "text": "2/5",
+        "size": 30,
+        "bounds": [
+          1750,
+          74,
+          1804,
+          99
+        ]
+      },
+      {
+        "text": "Real captured results. Tests unchanged within each comparison.",
+        "size": 26,
+        "bounds": [
+          110,
+          1005,
+          1102,
+          1030
+        ]
+      },
+      {
+        "text": "01 / WEAK TEST",
+        "size": 28,
+        "bounds": [
+          110,
+          165,
+          348,
+          189
+        ]
+      },
+      {
+        "text": "Free shipping starts at 100.",
+        "size": 58,
+        "bounds": [
+          110,
+          221,
+          1090,
+          277
+        ]
+      },
+      {
+        "text": "prove-fix / captured helper + pytest output",
+        "size": 25,
+        "bounds": [
+          260,
+          317,
+          905,
+          341
+        ]
+      },
+      {
+        "text": "assert free_shipping(150) is True",
+        "size": 46,
+        "bounds": [
+          150,
+          406,
+          1074,
+          453
+        ]
+      },
+      {
+        "text": "With fix     PASS",
+        "size": 52,
+        "bounds": [
+          150,
+          519,
+          677,
+          560
+        ]
+      },
+      {
+        "text": "Without fix  PASS",
+        "size": 52,
+        "bounds": [
+          150,
+          594,
+          677,
+          635
+        ]
+      },
+      {
+        "text": "prove-fix | NOT_CAUGHT",
+        "size": 46,
+        "bounds": [
+          150,
+          706,
+          766,
+          752
+        ]
+      },
+      {
+        "text": "This test missed the bug.",
+        "size": 58,
+        "bounds": [
+          110,
+          882,
+          985,
+          938
+        ]
+      }
+    ],
+    [
+      {
+        "text": "prove-fix",
+        "size": 35,
+        "bounds": [
+          110,
+          74,
+          299,
+          108
+        ]
+      },
+      {
+        "text": "EDUCATIONAL DEMO / EDITED CLI REPLAY",
+        "size": 26,
+        "bounds": [
+          570,
+          82,
+          1146,
+          103
+        ]
+      },
+      {
+        "text": "3/5",
+        "size": 30,
+        "bounds": [
+          1750,
+          74,
+          1804,
+          99
+        ]
+      },
+      {
+        "text": "Real captured results. Tests unchanged within each comparison.",
+        "size": 26,
+        "bounds": [
+          110,
+          1005,
+          1102,
+          1030
+        ]
+      },
+      {
+        "text": "02 / SWITCH TO BOUNDARY TEST",
+        "size": 28,
+        "bounds": [
+          110,
+          165,
+          586,
+          189
+        ]
+      },
+      {
+        "text": "Now test the boundary: 100.",
+        "size": 58,
+        "bounds": [
+          110,
+          221,
+          1055,
+          277
+        ]
+      },
+      {
+        "text": "prove-fix / captured helper + pytest output",
+        "size": 25,
+        "bounds": [
+          260,
+          317,
+          905,
+          341
+        ]
+      },
+      {
+        "text": "assert free_shipping(100) is True",
+        "size": 46,
+        "bounds": [
+          150,
+          397,
+          1074,
+          444
+        ]
+      },
+      {
+        "text": "With fix  PASS",
+        "size": 43,
+        "bounds": [
+          150,
+          482,
+          514,
+          515
+        ]
+      },
+      {
+        "text": "Without fix  FAIL",
+        "size": 43,
+        "bounds": [
+          850,
+          482,
+          1292,
+          515
+        ]
+      },
+      {
+        "text": "E   assert False is True",
+        "size": 42,
+        "bounds": [
+          150,
+          555,
+          750,
+          587
+        ]
+      },
+      {
+        "text": "E    +  where False = free_shipping(100)",
+        "size": 42,
+        "bounds": [
+          150,
+          613,
+          1150,
+          656
+        ]
+      },
+      {
+        "text": "prove-fix | CAUGHT",
+        "size": 46,
+        "bounds": [
+          150,
+          718,
+          654,
+          764
+        ]
+      },
+      {
+        "text": "This one catches it.",
+        "size": 58,
+        "bounds": [
+          110,
+          882,
+          810,
+          927
+        ]
+      }
+    ],
+    [
+      {
+        "text": "prove-fix",
+        "size": 35,
+        "bounds": [
+          110,
+          74,
+          299,
+          108
+        ]
+      },
+      {
+        "text": "EDUCATIONAL DEMO / EDITED CLI REPLAY",
+        "size": 26,
+        "bounds": [
+          570,
+          82,
+          1146,
+          103
+        ]
+      },
+      {
+        "text": "4/5",
+        "size": 30,
+        "bounds": [
+          1750,
+          74,
+          1804,
+          99
+        ]
+      },
+      {
+        "text": "Real captured results. Tests unchanged within each comparison.",
+        "size": 26,
+        "bounds": [
+          110,
+          1005,
+          1102,
+          1030
+        ]
+      },
+      {
+        "text": "Same test. With and without the fix.",
+        "size": 61,
+        "bounds": [
+          110,
+          206,
+          1442,
+          253
+        ]
+      },
+      {
+        "text": "Two separate comparisons. Only >= becomes >.",
+        "size": 34,
+        "bounds": [
+          110,
+          292,
+          990,
+          325
+        ]
+      },
+      {
+        "text": "TEST",
+        "size": 32,
+        "bounds": [
+          160,
+          438,
+          236,
+          462
+        ]
+      },
+      {
+        "text": "WITH FIX",
+        "size": 32,
+        "bounds": [
+          680,
+          438,
+          832,
+          462
+        ]
+      },
+      {
+        "text": "WITHOUT FIX",
+        "size": 32,
+        "bounds": [
+          1030,
+          438,
+          1239,
+          462
+        ]
+      },
+      {
+        "text": "RESULT",
+        "size": 32,
+        "bounds": [
+          1390,
+          438,
+          1504,
+          462
+        ]
+      },
+      {
+        "text": "weak / 150",
+        "size": 37,
+        "bounds": [
+          160,
+          552,
+          380,
+          583
+        ]
+      },
+      {
+        "text": "PASS",
+        "size": 41,
+        "bounds": [
+          680,
+          553,
+          780,
+          584
+        ]
+      },
+      {
+        "text": "PASS",
+        "size": 41,
+        "bounds": [
+          1030,
+          553,
+          1130,
+          584
+        ]
+      },
+      {
+        "text": "NOT_CAUGHT",
+        "size": 34,
+        "bounds": [
+          1390,
+          556,
+          1590,
+          587
+        ]
+      },
+      {
+        "text": "boundary / 100",
+        "size": 37,
+        "bounds": [
+          160,
+          666,
+          468,
+          702
+        ]
+      },
+      {
+        "text": "PASS",
+        "size": 41,
+        "bounds": [
+          680,
+          667,
+          780,
+          698
+        ]
+      },
+      {
+        "text": "FAIL",
+        "size": 41,
+        "bounds": [
+          1030,
+          668,
+          1130,
+          698
+        ]
+      },
+      {
+        "text": "CAUGHT",
+        "size": 34,
+        "bounds": [
+          1390,
+          670,
+          1510,
+          695
+        ]
+      },
+      {
+        "text": "Evidence for this regression. No correctness guarantee.",
+        "size": 39,
+        "bounds": [
+          110,
+          883,
+          1375,
+          921
+        ]
+      }
+    ],
+    [
+      {
+        "text": "prove-fix",
+        "size": 35,
+        "bounds": [
+          110,
+          74,
+          299,
+          108
+        ]
+      },
+      {
+        "text": "EDUCATIONAL DEMO / EDITED CLI REPLAY",
+        "size": 26,
+        "bounds": [
+          570,
+          82,
+          1146,
+          103
+        ]
+      },
+      {
+        "text": "5/5",
+        "size": 30,
+        "bounds": [
+          1750,
+          74,
+          1804,
+          99
+        ]
+      },
+      {
+        "text": "Real captured results. Tests unchanged within each comparison.",
+        "size": 26,
+        "bounds": [
+          110,
+          1005,
+          1102,
+          1030
+        ]
+      },
+      {
+        "text": "prove-fix",
+        "size": 115,
+        "bounds": [
+          110,
+          280,
+          731,
+          391
+        ]
+      },
+      {
+        "text": "A regression-checking skill",
+        "size": 63,
+        "bounds": [
+          110,
+          446,
+          1136,
+          507
+        ]
+      },
+      {
+        "text": "github.com/grishahq/prove-fix",
+        "size": 53,
+        "bounds": [
+          110,
+          575,
+          1038,
+          626
+        ]
+      },
+      {
+        "text": "v0.1 / Python + pytest / explicit implementation patch",
+        "size": 32,
+        "bounds": [
+          110,
+          739,
+          1136,
+          770
+        ]
+      },
+      {
+        "text": "Claude Code + Codex installation adapters",
+        "size": 33,
+        "bounds": [
+          110,
+          821,
+          930,
+          853
+        ]
+      }
+    ]
+  ],
+  "encoding_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-y",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "<render-work>/timeline.txt",
+    "-t",
+    "20",
+    "-r",
+    "30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "19",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "<media>/prove-fix-demo.mp4"
+  ],
+  "frame_checks": [
+    "00.1.png",
+    "02.9.png",
+    "03.1.png",
+    "07.9.png",
+    "08.1.png",
+    "13.9.png",
+    "14.1.png",
+    "16.9.png",
+    "17.1.png",
+    "19.9.png"
+  ],
+  "visual_review": {
+    "inspected_seconds": [
+      0.1,
+      2.9,
+      3.1,
+      7.9,
+      8.1,
+      13.9,
+      14.1,
+      16.9,
+      17.1,
+      19.9
+    ],
+    "outcome": "Beginning, transitions and ending inspected; readable text, no clipping, blank frames, or incorrect statuses."
+  }
+}

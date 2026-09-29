@@ -1,0 +1,410 @@
+{
+  "schema": 1,
+  "classification": "CAUGHT",
+  "runs": [
+    {
+      "fixed": {
+        "command": [
+          "<python>",
+          "-I",
+          "<snapshot-root>/pytest_runner.py",
+          "--result",
+          "<agent-work>/result/run-1-fixed/pytest.json",
+          "--original",
+          "<fixture>",
+          "--node",
+          "test_shipping.py::test_boundary",
+          "--implementation",
+          "shipping.py"
+        ],
+        "cwd": "<snapshot-root>/run-1-fixed",
+        "stdout": "run-1-fixed/stdout.txt",
+        "stderr": "run-1-fixed/stderr.txt",
+        "structured": "run-1-fixed/pytest.json",
+        "timed_out": false,
+        "exit_code": 0,
+        "duration_seconds": 0.2372,
+        "evidence": {
+          "schema": 1,
+          "collected": [
+            "test_shipping.py::test_boundary"
+          ],
+          "collection_errors": [],
+          "events": [
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "setup",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "call",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "teardown",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            }
+          ],
+          "internal_errors": [],
+          "import_violations": [],
+          "loaded_implementation": [
+            "shipping.py"
+          ],
+          "pytest_version": "9.1.1",
+          "exit_code": 0
+        },
+        "input_files_unchanged": true
+      },
+      "reversed": {
+        "command": [
+          "<python>",
+          "-I",
+          "<snapshot-root>/pytest_runner.py",
+          "--result",
+          "<agent-work>/result/run-1-reversed/pytest.json",
+          "--original",
+          "<fixture>",
+          "--node",
+          "test_shipping.py::test_boundary",
+          "--implementation",
+          "shipping.py"
+        ],
+        "cwd": "<snapshot-root>/run-1-reversed",
+        "stdout": "run-1-reversed/stdout.txt",
+        "stderr": "run-1-reversed/stderr.txt",
+        "structured": "run-1-reversed/pytest.json",
+        "timed_out": false,
+        "exit_code": 1,
+        "duration_seconds": 0.174,
+        "evidence": {
+          "schema": 1,
+          "collected": [
+            "test_shipping.py::test_boundary"
+          ],
+          "collection_errors": [],
+          "events": [
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "setup",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "call",
+              "outcome": "failed",
+              "exception": "AssertionError",
+              "assertions": [
+                {
+                  "path": "test_shipping.py",
+                  "line": 9,
+                  "source": "assert free_shipping(100) is True"
+                }
+              ],
+              "assertion_origin": {
+                "path": "test_shipping.py",
+                "line": 9,
+                "source": "assert free_shipping(100) is True"
+              },
+              "failure": "assert False is True\n +  where False = free_shipping(100)",
+              "xfail": false,
+              "traceback": "test_shipping.py:9: in test_boundary\n    assert free_shipping(100) is True\nE   assert False is True\nE    +  where False = free_shipping(100)"
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "teardown",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            }
+          ],
+          "internal_errors": [],
+          "import_violations": [],
+          "loaded_implementation": [
+            "shipping.py"
+          ],
+          "pytest_version": "9.1.1",
+          "exit_code": 1
+        },
+        "input_files_unchanged": true
+      }
+    },
+    {
+      "fixed": {
+        "command": [
+          "<python>",
+          "-I",
+          "<snapshot-root>/pytest_runner.py",
+          "--result",
+          "<agent-work>/result/run-2-fixed/pytest.json",
+          "--original",
+          "<fixture>",
+          "--node",
+          "test_shipping.py::test_boundary",
+          "--implementation",
+          "shipping.py"
+        ],
+        "cwd": "<snapshot-root>/run-2-fixed",
+        "stdout": "run-2-fixed/stdout.txt",
+        "stderr": "run-2-fixed/stderr.txt",
+        "structured": "run-2-fixed/pytest.json",
+        "timed_out": false,
+        "exit_code": 0,
+        "duration_seconds": 0.1776,
+        "evidence": {
+          "schema": 1,
+          "collected": [
+            "test_shipping.py::test_boundary"
+          ],
+          "collection_errors": [],
+          "events": [
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "setup",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "call",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "teardown",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            }
+          ],
+          "internal_errors": [],
+          "import_violations": [],
+          "loaded_implementation": [
+            "shipping.py"
+          ],
+          "pytest_version": "9.1.1",
+          "exit_code": 0
+        },
+        "input_files_unchanged": true
+      },
+      "reversed": {
+        "command": [
+          "<python>",
+          "-I",
+          "<snapshot-root>/pytest_runner.py",
+          "--result",
+          "<agent-work>/result/run-2-reversed/pytest.json",
+          "--original",
+          "<fixture>",
+          "--node",
+          "test_shipping.py::test_boundary",
+          "--implementation",
+          "shipping.py"
+        ],
+        "cwd": "<snapshot-root>/run-2-reversed",
+        "stdout": "run-2-reversed/stdout.txt",
+        "stderr": "run-2-reversed/stderr.txt",
+        "structured": "run-2-reversed/pytest.json",
+        "timed_out": false,
+        "exit_code": 1,
+        "duration_seconds": 0.1779,
+        "evidence": {
+          "schema": 1,
+          "collected": [
+            "test_shipping.py::test_boundary"
+          ],
+          "collection_errors": [],
+          "events": [
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "setup",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "call",
+              "outcome": "failed",
+              "exception": "AssertionError",
+              "assertions": [
+                {
+                  "path": "test_shipping.py",
+                  "line": 9,
+                  "source": "assert free_shipping(100) is True"
+                }
+              ],
+              "assertion_origin": {
+                "path": "test_shipping.py",
+                "line": 9,
+                "source": "assert free_shipping(100) is True"
+              },
+              "failure": "assert False is True\n +  where False = free_shipping(100)",
+              "xfail": false,
+              "traceback": "test_shipping.py:9: in test_boundary\n    assert free_shipping(100) is True\nE   assert False is True\nE    +  where False = free_shipping(100)"
+            },
+            {
+              "nodeid": "test_shipping.py::test_boundary",
+              "phase": "teardown",
+              "outcome": "passed",
+              "exception": null,
+              "assertions": [],
+              "assertion_origin": null,
+              "failure": null,
+              "xfail": false
+            }
+          ],
+          "internal_errors": [],
+          "import_violations": [],
+          "loaded_implementation": [
+            "shipping.py"
+          ],
+          "pytest_version": "9.1.1",
+          "exit_code": 1
+        },
+        "input_files_unchanged": true
+      }
+    }
+  ],
+  "helper_hashes": {
+    "check.py": "1867f5ee067923cf36106a3ee401d7c74d1144784cee5ceb194400920bfd0c1e",
+    "pytest_runner.py": "79e0d2d9800767d6dfc6f39eae5a1e8882a0dccdf52a8110bacd10937039a987"
+  },
+  "helper_command": [
+    "<python>",
+    "<fixture>/.claude/skills/prove-fix/scripts/check.py",
+    "--repo",
+    "<fixture>",
+    "--patch",
+    "<fixture>/fix.patch",
+    "--python",
+    "<python>",
+    "--allow",
+    "shipping.py",
+    "--protect",
+    "test_shipping.py",
+    "--include",
+    "test_shipping.py",
+    "--test",
+    "test_shipping.py::test_boundary",
+    "--expect-assert",
+    "test_shipping.py:9",
+    "--bug-description",
+    "An order total of exactly 100 must qualify for free shipping (>= 100, not > 100).",
+    "--timeout",
+    "30",
+    "--runs",
+    "2",
+    "--out",
+    "<agent-work>/result"
+  ],
+  "safety_boundary": "Temporary copies are NOT a security sandbox for project code.",
+  "version": "0.1.0",
+  "test": "test_shipping.py::test_boundary",
+  "runs_requested": 2,
+  "timeout_seconds": 30.0,
+  "implementation_paths": [
+    "shipping.py"
+  ],
+  "protected_paths": [
+    "test_shipping.py",
+    "test_shipping.py"
+  ],
+  "explicit_inclusions": [
+    "test_shipping.py"
+  ],
+  "explicit_exclusions": [],
+  "excluded_files": [],
+  "patch": {
+    "direction": "forward fix; reversed in second snapshot",
+    "sha256": "778477f72ba761cac5c3c368551a08467af8f4f3d327cb807ad3de3deaf4b512",
+    "text": "diff --git a/shipping.py b/shipping.py\n--- a/shipping.py\n+++ b/shipping.py\n@@ -1,3 +1,3 @@\n def free_shipping(amount):\n     \"\"\"Free shipping starts at an order total of 100.\"\"\"\n-    return amount > 100\n+    return amount >= 100\n"
+  },
+  "interpretation": {
+    "expected_assertion": {
+      "path": "test_shipping.py",
+      "line": 9,
+      "source": "assert free_shipping(100) is True"
+    },
+    "target_bug": "An order total of exactly 100 must qualify for free shipping (>= 100, not > 100).",
+    "attribution": "Caller-supplied expectation. Helper checks AssertionError and source location; agent must inspect semantics."
+  },
+  "snapshots": {
+    "fixed": {
+      "shipping.py": {
+        "sha256": "cf63d3fd9d9333da83fe4dd387357a380c3b43b9b8929019683037a6c1e62c92",
+        "mode": 420
+      },
+      "test_shipping.py": {
+        "sha256": "5c4f882ac30547637bb3b56c4d6015c35a818b86ed9117102eb932bfd059e4d6",
+        "mode": 420
+      }
+    },
+    "reversed": {
+      "shipping.py": {
+        "sha256": "9e00d226d6b96d0988dcf55ec5881af3c7cc2e32c4737a5ab634e135aedac755",
+        "mode": 420
+      },
+      "test_shipping.py": {
+        "sha256": "5c4f882ac30547637bb3b56c4d6015c35a818b86ed9117102eb932bfd059e4d6",
+        "mode": 420
+      }
+    },
+    "changed_files": [
+      "shipping.py"
+    ],
+    "non_selected_identical": true
+  },
+  "caller_preservation": {
+    "before": {
+      "head": "5d42ac787ad06d2c4837418b82a87ba2835af0c2",
+      "index_sha256": "a586f20cb772be94818017b2a708f63f56a6abe618d80249321464d09a678036"
+    },
+    "after": {
+      "head": "5d42ac787ad06d2c4837418b82a87ba2835af0c2",
+      "index_sha256": "a586f20cb772be94818017b2a708f63f56a6abe618d80249321464d09a678036"
+    },
+    "files_unchanged": true,
+    "git_unchanged": true
+  },
+  "explanation": "The reversed fix failed at the declared bug-related assertion in every run."
+}

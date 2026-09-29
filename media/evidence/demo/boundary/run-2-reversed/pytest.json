@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "collected": [
+    "test_shipping.py::test_boundary"
+  ],
+  "collection_errors": [],
+  "events": [
+    {
+      "nodeid": "test_shipping.py::test_boundary",
+      "phase": "setup",
+      "outcome": "passed",
+      "exception": null,
+      "assertions": [],
+      "assertion_origin": null,
+      "failure": null,
+      "xfail": false
+    },
+    {
+      "nodeid": "test_shipping.py::test_boundary",
+      "phase": "call",
+      "outcome": "failed",
+      "exception": "AssertionError",
+      "assertions": [
+        {
+          "path": "test_shipping.py",
+          "line": 9,
+          "source": "assert free_shipping(100) is True"
+        }
+      ],
+      "assertion_origin": {
+        "path": "test_shipping.py",
+        "line": 9,
+        "source": "assert free_shipping(100) is True"
+      },
+      "failure": "assert False is True\n +  where False = free_shipping(100)",
+      "xfail": false,
+      "traceback": "test_shipping.py:9: in test_boundary\n    assert free_shipping(100) is True\nE   assert False is True\nE    +  where False = free_shipping(100)"
+    },
+    {
+      "nodeid": "test_shipping.py::test_boundary",
+      "phase": "teardown",
+      "outcome": "passed",
+      "exception": null,
+      "assertions": [],
+      "assertion_origin": null,
+      "failure": null,
+      "xfail": false
+    }
+  ],
+  "internal_errors": [],
+  "import_violations": [],
+  "loaded_implementation": [
+    "shipping.py"
+  ],
+  "pytest_version": "9.1.1",
+  "exit_code": 1
+}

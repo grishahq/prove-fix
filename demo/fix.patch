@@ -1,0 +1,8 @@
+diff --git a/shipping.py b/shipping.py
+--- a/shipping.py
++++ b/shipping.py
+@@ -1,3 +1,3 @@
+ def free_shipping(amount):
+     """Free shipping starts at an order total of 100."""
+-    return amount > 100
++    return amount >= 100

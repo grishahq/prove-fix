@@ -1,0 +1,6 @@
+interface:
+  display_name: "prove-fix"
+  short_description: "Check whether a regression test catches a reversed fix"
+  default_prompt: "Use $prove-fix to check the selected implementation fix and regression test."
+policy:
+  allow_implicit_invocation: false

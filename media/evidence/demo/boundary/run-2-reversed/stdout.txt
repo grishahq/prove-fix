@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________________________________ test_boundary _________________________________
+test_shipping.py:9: in test_boundary
+    assert free_shipping(100) is True
+E   assert False is True
+E    +  where False = free_shipping(100)
+=========================== short test summary info ============================
+FAILED test_shipping.py::test_boundary - assert False is True
+1 failed in 0.03s

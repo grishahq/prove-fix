@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:03,000
+Your test is green. Put the bug back.
+
+2
+00:00:03,000 --> 00:00:08,000
+Free shipping starts at 100. The weak test at 150 missed the bug.
+
+3
+00:00:08,000 --> 00:00:14,000
+Switch to the boundary test at 100. This one catches it.
+
+4
+00:00:14,000 --> 00:00:17,000
+Same test, with and without the fix. Two separate comparisons.
+
+5
+00:00:17,000 --> 00:00:20,000
+prove-fix. A regression-checking skill. github.com/grishahq/prove-fix

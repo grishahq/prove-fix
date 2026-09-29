@@ -1,0 +1,9 @@
+[project]
+name = "prove-fix"
+version = "0.1.0"
+description = "Check whether a pytest regression test notices a selected fix being reversed."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

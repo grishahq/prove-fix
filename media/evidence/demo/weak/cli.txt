@@ -1,0 +1,6 @@
+prove-fix | NOT_CAUGHT
+  run 1: fixed=PASS | reversed=PASS
+  run 2: fixed=PASS | reversed=PASS
+  The unchanged selected test passed with and without the fix in every run.
+  Evidence: <demo-work>/weak/report.json
+  These runs do not establish overall correctness or absence of flakiness.

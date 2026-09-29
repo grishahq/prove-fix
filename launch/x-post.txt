@@ -1,0 +1,6 @@
+Your test is green. Put the bug back.
+
+prove-fix checks the same pytest test with and without one selected fix. Did it catch the regression?
+
+v0.1: Python + pytest, explicit patch. Skill adapters for Claude Code and Codex.
+https://github.com/grishahq/prove-fix
