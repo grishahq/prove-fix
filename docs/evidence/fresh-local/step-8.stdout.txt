@@ -1,0 +1,2 @@
+Installed claude: <fresh-work>/test-home/.claude/skills/prove-fix
+Invoke /prove-fix in Claude Code or $prove-fix in Codex.

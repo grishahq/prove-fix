@@ -6,5 +6,5 @@
 - [x] Run and repeat the disposable educational demo; save real evidence.
 - [x] Exercise explicit invocation in available authenticated agent CLIs.
 - [x] Render and inspect the MP4, poster, and captions.
-- [ ] Prepare and validate launch copy and fresh-checkout instructions.
-- [ ] Commit locally and push if the remote is still empty and write access works.
+- [x] Prepare and validate launch copy and fresh-checkout instructions.
+- [x] Commit locally and push to the empty remote using existing authorized SSH access.

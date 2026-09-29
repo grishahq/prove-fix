@@ -1,0 +1,190 @@
+{
+  "source": "<local committed repo>",
+  "revision": "9d13a628f9d30420daf52c867e4f88549730f3bf",
+  "steps": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 2.455,
+      "stdout": "step-1.stdout.txt",
+      "stderr": "step-1.stderr.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 3.565,
+      "stdout": "step-2.stdout.txt",
+      "stderr": "step-2.stderr.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "scripts/demo.py",
+        "--out",
+        "artifacts/demo"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 2.721,
+      "stdout": "step-3.stdout.txt",
+      "stderr": "step-3.stderr.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 30.331,
+      "stdout": "step-4.stdout.txt",
+      "stderr": "step-4.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "claude",
+        "--project",
+        ".",
+        "--dry-run"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.092,
+      "stdout": "step-5.stdout.txt",
+      "stderr": "step-5.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "claude",
+        "--project",
+        "."
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.045,
+      "stdout": "step-6.stdout.txt",
+      "stderr": "step-6.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "claude",
+        "--user",
+        "--home",
+        "<fresh-work>/test-home",
+        "--dry-run"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.037,
+      "stdout": "step-7.stdout.txt",
+      "stderr": "step-7.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "claude",
+        "--user",
+        "--home",
+        "<fresh-work>/test-home"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.039,
+      "stdout": "step-8.stdout.txt",
+      "stderr": "step-8.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "codex",
+        "--project",
+        ".",
+        "--dry-run"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.04,
+      "stdout": "step-9.stdout.txt",
+      "stderr": "step-9.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "codex",
+        "--project",
+        "."
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.039,
+      "stdout": "step-10.stdout.txt",
+      "stderr": "step-10.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "codex",
+        "--user",
+        "--home",
+        "<fresh-work>/test-home",
+        "--dry-run"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.035,
+      "stdout": "step-11.stdout.txt",
+      "stderr": "step-11.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/install.py",
+        "--agent",
+        "codex",
+        "--user",
+        "--home",
+        "<fresh-work>/test-home"
+      ],
+      "cwd": "<fresh-work>/prove-fix",
+      "exit_code": 0,
+      "duration_seconds": 0.041,
+      "stdout": "step-12.stdout.txt",
+      "stderr": "step-12.stderr.txt"
+    }
+  ],
+  "passed": true,
+  "scope": "README runtime/demo/tests and both install scopes in temporary directories; global settings untouched."
+}

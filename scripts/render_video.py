@@ -97,6 +97,11 @@ def load_evidence(directory):
                 raise ValueError("Video cannot summarize inconsistent reruns.")
             statuses.append(observations[0])
         results[item["name"]] = {"report": report, "statuses": statuses, "amount": item["amount"]}
+    if (results["weak"]["report"]["classification"] != "NOT_CAUGHT"
+            or results["weak"]["statuses"] != ["PASS", "PASS"]
+            or results["boundary"]["report"]["classification"] != "CAUGHT"
+            or results["boundary"]["statuses"] != ["PASS", "FAIL"]):
+        raise ValueError("Captured outcomes do not support this educational demo's captions.")
     boundary = results["boundary"]["report"]
     reversed_ = boundary["runs"][0]["reversed"]
     call = reversed_["evidence"]["events"][1]

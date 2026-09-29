@@ -1,0 +1,2 @@
+Installed codex: <fresh-work>/prove-fix/.agents/skills/prove-fix
+Invoke /prove-fix in Claude Code or $prove-fix in Codex.

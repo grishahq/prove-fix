@@ -93,5 +93,54 @@ Neither social posts nor a public release have been published by this task.
 
 The GitHub Actions workflow is configured to run tests/demo on Python 3.11 with
 pytest 8.3.5 and Python 3.13 with pytest 9.x. Local success alone does not establish
-remote CI status. Final test totals, fresh-checkout results and Git status are
-recorded after their actual runs below.
+remote CI status. Final test totals and fresh-checkout observations follow.
+
+
+## Final local verification
+
+- Python 3.11.14 / pytest 9.1.1: **53 passed** (25.28 seconds).
+- Python 3.11.14 / pytest 8.3.5: **53 passed** (26.45 seconds).
+- Fresh temporary clone of commit `9d13a62`: all 12 README runtime/demo/install
+  commands returned 0, including **53 tests passed** (30.10 seconds) in the newly
+  created environment. Its `python3` was Python 3.14.3. User install commands used
+  an alternate temporary home; real global directories were untouched.
+- The final independent demo repeat again observed NOT_CAUGHT and CAUGHT, two runs
+  per side. Final live Claude report and demo record the same helper source hashes.
+- The skill frontmatter validator passed. X length: 261 characters including final
+  newline; LinkedIn length: 178 words. All checked relative links resolve.
+
+Reproduce the fresh check with:
+
+```bash
+.venv/bin/python scripts/verify_fresh.py --out artifacts/fresh-local-new
+```
+
+This clones the committed local repository, then executes the README commands in
+that fresh checkout. `--remote` selects the literal GitHub URL after a successful
+push. [Saved local clone commands and outputs](evidence/fresh-local/report.json).
+A fresh clone removes files/indices/settings created during validation when its
+owned temporary directory is cleaned up.
+
+
+## Published clone and remote CI
+
+The initial implementation commit `9d13a62` was successfully pushed to `main` using
+already-authorized SSH access. HTTPS without a credential helper failed; using the
+existing OAuth credential then failed because it lacked the `workflow` scope.
+No token scopes, global Git identity, agent settings, or permissions were changed.
+The authorized SSH push included the workflow and never used force-push.
+
+```bash
+git -c core.sshCommand='ssh -o BatchMode=yes -o StrictHostKeyChecking=yes' push git@github.com:grishahq/prove-fix.git main:main
+.venv/bin/python scripts/verify_fresh.py --remote --out artifacts/fresh-remote
+```
+
+The fresh **GitHub** clone also passed all 12 README runtime/demo/install commands,
+including **53 tests**. [Exact published-clone commands and outputs](evidence/fresh-remote/report.json).
+
+[GitHub Actions run for `9d13a62`](https://github.com/grishahq/prove-fix/actions/runs/36530903573)
+completed successfully. Python 3.11 / pytest 8.3.5: **53 passed** in 19.64 seconds;
+Python 3.13 / pytest 9.x: **53 passed** in 23.57 seconds. Both fresh CI demos observed
+NOT_CAUGHT and CAUGHT with two independent reruns per side. These are observed
+remote results, separate from local verification. A subsequent documentation/media
+validation commit preserves the same checker and demo source.
